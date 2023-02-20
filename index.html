@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://github.com/maximo-spagnoli/proyecto-calculadora.git">
+    <title>Proyecto 1</title>
+</head>
+<body>
+    <div id="app">
+        <form name="calculadora">
+            <input type="textfield" name="rta" value="" autocomplete="off" readonly>
+            
+            <input type="button" value="7" onclick="document.calculadora.rta.value+='7'" class="gray">
+            <input type="button" value="8" onclick="document.calculadora.rta.value+='8'" class="gray">
+            <input type="button" value="9" onclick="document.calculadora.rta.value+='9'" class="gray">
+            <input type="button" value="+" onclick="document.calculadora.rta.value+='+'" class="orange">
+            <br>
+            <input type="button" value="4" onclick="document.calculadora.rta.value+='4'" class="gray">
+            <input type="button" value="5" onclick="document.calculadora.rta.value+='5'" class="gray">
+            <input type="button" value="6" onclick="document.calculadora.rta.value+='6'" class="gray">
+            <input type="button" value="-" onclick="document.calculadora.rta.value+='-'" class="orange">
+            <br>
+            <input type="button" value="1" onclick="document.calculadora.rta.value+='1'" class="gray">
+            <input type="button" value="2" onclick="document.calculadora.rta.value+='2'" class="gray">
+            <input type="button" value="3" onclick="document.calculadora.rta.value+='3'" class="gray">
+            <input type="button" value="X" onclick="document.calculadora.rta.value+='*'" class="orange">
+            <br>
+            <input type="button" value="0" onclick="document.calculadora.rta.value+='0'" class="gray">
+            <input type="reset" value="C"> 
+            <input type="button" value="=" onclick="document.calculadora.rta.value= eval(document.calculadora.rta.value)">
+            <input type="button" value="/" onclick="document.calculadora.rta.value+='/'" class="orange">
+        </form>
+    </div>
+</body>
+</html>
